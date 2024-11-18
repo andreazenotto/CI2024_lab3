@@ -5,22 +5,22 @@
 # Lab3: N-Puzzle Solver  
 
 ## Overview  
-This project implements a solver for the \( n^2-1 \) puzzle (e.g., 8-puzzle, 15-puzzle) using the A* algorithm. The goal is to solve puzzles of varying dimensions efficiently by leveraging heuristic-based search methods.  
+This project implements a solver for the $n^2-1$ puzzle (e.g., 8-puzzle, 15-puzzle) using the A* algorithm. The goal is to solve puzzles of varying dimensions efficiently by leveraging heuristic-based search methods.  
 
 ---
 
 ## Algorithm  
 
 ### A* Algorithm  
-- **Description**: A heuristic-based path-search algorithm that evaluates states using the \( f(n) = g(n) + h(n) \) cost function:  
-  - \( g(n) \): Cost of the path from the start to the current state.  
-  - \( h(n) \): Heuristic estimate of the cost to reach the goal state.  
+- **Description**: A heuristic-based path-search algorithm that evaluates states using the $f(n) = g(n) + h(n)$ cost function:  
+  - $g(n)$: Cost of the path from the start to the current state.  
+  - $h(n)$: Heuristic estimate of the cost to reach the goal state.  
 - **Heuristic Used**:  
   - **Manhattan Distance**: Measures the total distance each tile must travel to reach its goal position, ignoring obstacles.  
 
 ### Implementation Details  
 - **Puzzle State Representation**:  
-  - Uses a `PuzzleState` class to encapsulate the puzzle's state, cost information (\( g, h, f \)), and path taken.  
+  - Uses a `PuzzleState` class to encapsulate the puzzle's state, cost information $( g, h, f )$, and path taken.  
 - **Shuffling**:  
   - Puzzles are randomized through a series of valid moves to ensure solvability.  
 - **Goal State**:  
