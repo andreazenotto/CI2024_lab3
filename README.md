@@ -35,23 +35,23 @@ The following results were obtained by solving 8-puzzle and 15-puzzle instances 
 ### 8-Puzzle (3x3)  
 - **Start State**:  
   ```plaintext  
-  [[8 6 7]  
-   [2 5 4]  
-   [3 0 1]]  
+   |3|7|4| 
+   |6|0|8| 
+   |5|2|1|  
   ```  
-- **Solution**: Found in 31 moves.  
-- **Total Actions Evaluated**: 201.  
+- **Quality** (number of actions in the solution): 26
+- **Cost** (total number of actions evaluated): 3811
 
 ### 15-Puzzle (4x4)  
 - **Start State**:  
   ```plaintext  
-  [[ 1  2  3  4]  
-   [ 5  6  0  8]  
-   [ 9 10  7 11]  
-   [13 14 15 12]]  
+   | 0| 9| 6| 8|
+   | 2|13|11| 7|
+   |10| 4| 5|12|
+   | 1|14| 3|15|
   ```  
-- **Solution**: Found in 50 moves.  
-- **Total Actions Evaluated**: 600.  
+- **Quality** (number of actions in the solution): 42
+- **Cost** (total number of actions evaluated): 1650528
 
 ---
 
